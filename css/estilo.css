@@ -82,3 +82,84 @@
   font-size: 1.8em;
   cursor: pointer;
 }
+
+
+/*MEDIA QUERIE*/
+@media screen and (max-width:600px) {
+  .cabecalho{
+    height: 600px;
+  }
+  .cabecalho nav{
+    max-width: 100%;
+    align-items: center;
+    padding: 5px;
+  }
+  .cabecalho nav h1{
+    font-size: 30px;
+  }
+  
+  .centralizar h2{
+    line-height: normal;
+    font-size: 2em;
+    width: 350px;
+  }
+  .centralizar p{
+    width: 90%;
+    font-size: 1em;
+    text-align: center;
+  }
+  .centralizar h3{
+    text-align: center;
+  }
+  .centralizar div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .centralizar div input{
+    width: 90%;
+    margin: 5px;
+  }
+  .centralizar div button{
+    width: 90%;
+    border: 5px;
+    font-size: 1.5em;
+  }
+  
+}
+
+/*FORMTANDO A SECÇÃO DE VIDEO*/
+.video{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /*background-color: #000;*/
+  color: #fff;
+}
+.video div{
+  width: 50%;
+}
+.texto h2{
+  font-size: 2.5em;
+}
+.texto p{
+  fon
+}
+.texto{
+  background-color:red;;
+  text-align: justify;
+  max-width: 10px;
+}
+.cartao-video{
+  position: relative;
+}
+.cartao-video img{
+  display: none;
+  position: absolute;
+  left: 8px;
+  top: 100px;
+}
