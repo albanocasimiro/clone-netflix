@@ -8,6 +8,9 @@
   font-family: 'Open Sans', sans-serif;
 
 }
+body{
+  background-color: #000;
+}
 /*FORMATANDO O CABEÇALHO*/
 .cabecalho{
   width: 100%;
@@ -48,9 +51,9 @@
 }
 .centralizar h2{
   text-align: center;
-  width: 600px;
+  width: 650px;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 55px;
   margin-bottom: 20px;
 }
@@ -59,6 +62,7 @@
   color: white;
   font-size: 26px;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 .centralizar p{
   color: white;
@@ -77,7 +81,7 @@
   height: 60px;
   color: white;
   width: 180px;
-  background-color: red;
+  background-color: rgb(207, 6, 6);
   border: none;
   font-size: 1.8em;
   cursor: pointer;
@@ -109,6 +113,7 @@
     text-align: center;
   }
   .centralizar h3{
+    line-height: 31px;
     text-align: center;
   }
   .centralizar div{
@@ -132,34 +137,187 @@
 
 /*FORMTANDO A SECÇÃO DE VIDEO*/
 .video{
+  margin: 70px 0 50px 0;
+  border-top: solid rgba(114, 107, 107, 0.363) 8px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  /*background-color: #000;*/
+  padding: 50px;
   color: #fff;
 }
 .video div{
+  margin: 50px;
   width: 50%;
+}
+.texto{
+  width: 500px;
+  text-align: justify;
+  
 }
 .texto h2{
   font-size: 2.5em;
 }
-.texto p{
-  fon
-}
-.texto{
-  background-color:red;;
-  text-align: justify;
-  max-width: 10px;
+.texto h3{
+  font-weight: normal;
+  font-size:1.5em;
 }
 .cartao-video{
   position: relative;
 }
+
 .cartao-video img{
-  display: none;
   position: absolute;
-  left: 8px;
-  top: 100px;
+  left: -12px;
+  top: -19px;
+}
+/*MEDIA QUERIE*/
+@media screen and (max-width:600px) {
+  .video{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .video div{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .texto{
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 6px;
+    max-width: 100%;
+  }
+  .texto h2{
+    font-size: 1.5em;
+  }
+  .texto h3{
+    font-size: 1em;
+  }
+  .cartao-video img{
+    max-width: 100%;
+    left: 0px;
+    top: 0;
+  }
+  .cartao-video video{
+    width: 100%;
+  }
+}
+
+/*FORMATANDO A PARTE DA APP*/
+.app{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid rgba(114, 107, 107, 0.363) 8px;
+  margin: 70px 0 50px 0;
+  color: #fff;
+}
+.app div{
+  width: 50%;
+}
+.app div h1{
+  width: 450px;
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+.app div h3{
+  width: 500px;
+  font-size: 2em;
+  font-weight: normal;
+}
+.animacao{
+  background-color: #000;
+  width: 380px !important;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  top: 300px;
+  left: 132px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border: solid rgba(114, 107, 107, 0.363) 3px;
+}
+.text{
+  margin: 8px;
+  width: 50% !important;
+}
+.text h4{
+  text-align: justify;
+}
+.text p{
+  color: rgb(9, 71, 216);
+  font-size: 15px;
+}
+/*MEDIA QUERIE*/
+@media screen and (max-width:600px){
+  .app{
+    flex-wrap: wrap;
+  }
+  .app div h1{
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .app div h3{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+  }
+  .app div{
+    width: 100%;
+  }
+  .app img{
+    max-width: 100%;
+  }
+  .animacao{
+    width: 270px !important;
+    top: 160px;
+    left: 40px;
+  }
+}
+/*FORMATANDO A PARTE DE ALL DEVICES*/
+.all-devices{
+  display: flex;
+  padding-top:20px;
+  flex-direction: column;
+  justify-content: center;
+  border-top: solid rgba(114, 107, 107, 0.363) 8px;
+  margin: 70px 0 50px 0;
+  color: #fff;
+}
+.all-devices div{
+  margin-left:50px;
+  width: 50%;
+}
+.all-devices div h2{
+  font-size: 2.5em;
+}
+.all-devices div h3{
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+/*MEDIA QUERIE*/
+@media screen and (max-width:600px){
+  .all-devices div{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .all-devices div h2{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  .all-devices div h3{
+    font-size: 1em;
+    padding: 5px;
+  }
+
 }
