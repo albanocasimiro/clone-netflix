@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilo.css">
   </head>
   <body>
@@ -59,7 +60,60 @@
       <div>
         <h2>Assista em todos os lugares.</h2>
         <h3>Transmita filmes e programas de TV ilimitados em seu telefone, tablet, laptop e TV.</h3>
-            </section>
       </div>
+     </section>
+     <section class="kids">
+       <img src="img/kids.png">
+       <div>
+         <h2>Crie perfis para crianças.</h2>
+         <h3>Envie as crianças em aventuras com seus personagens favoritos em um espaço feito apenas para elas - grátis com sua assinatura.</h3>
+       </div>
+     </section>
+     <section class="faqs">
+       <h2>perguntas frequentes</h2>
+       <li>
+         <h3>O que e a Netflix? <i class="fa-solid fa-plus" onclick="abrir()"id="abrir"></i><i class="fa-regular fa-xmark" id="fechar" onclick="fechar()"></i></h3>
+           <div id="text">
+             <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de programas de TV premiados, filmes, animes, documentários e muito mais em milhares de dispositivos conectados à Internet.</p>
+             <p>Você pode assistir o quanto quiser, quando quiser, sem um único comercial – tudo por um preço mensal baixo. Sempre há algo novo para descobrir e novos programas de TV e filmes são adicionados toda semana!</p>
+           </div>
+       </li>
+       <li>
+        <h3>Quanto custa a Netflix? <i class="fa-solid fa-plus" onclick="abrir()"id="abrir"></i><i class="fa-regular fa-xmark" id="fechar" onclick="fechar()"></i></h3>
+          <div id="text">
+            <p>Assista à Netflix em seu smartphone, tablet, Smart TV, laptop ou dispositivo de streaming, tudo por uma taxa mensal fixa. Os planos variam de US$ 3,99 a US$ 11,99 por mês. Sem custos extras, sem contratos.</p>
+          </div>
+      </li>
+      <p>Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</p>
+      <form>
+        <input type="email" placeholder="Email"> <button>Iniciar > </button>
+      </form>
+     </section>
+     <footer>
+      <p>Criado com <i class="fa-solid fa-heart"></i> por <a href="https://github.com/albanocasimiro" target="_blank">Albano Casimiro</a></p>
+      <div>
+        <a href="https://twitter.com/albano_casimir0" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/albano_casimiro/"target="_blank"><i class="fa-brands fa-square-instagram"></i></a><a href="https://github.com/albanocasimiro/albanocasimiro"target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      </div>
+     </footer>
+     <script>
+       function abrir(){
+        var i = document.getElementById("fechar")
+        var texto = document.getElementById("text")
+        var x = document.getElementById("abrir")
+        x.style.display = "none"
+        texto.style.display = "block"
+        i.style.display = "block"
+       } 
+       function fechar(){
+        var i = document.getElementById("fechar")
+        var texto = document.getElementById("text")
+        var x = document.getElementById("abrir")
+        texto.style.display = "none";
+        x.style.display = "block"
+        i.style.display = "none"
+       }
+     </script>
+
   </body>
 </html>
