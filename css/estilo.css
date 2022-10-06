@@ -72,12 +72,12 @@ body{
   display: flex;
   margin-top: 30px;
 }
-.centralizar input{
+.centralizar input, .faqs input{
   padding: 5px;
   width: 500px;
   height: 60px;
 }
-.centralizar button{
+.centralizar button, .faqs button{
   height: 60px;
   color: white;
   width: 180px;
@@ -367,7 +367,7 @@ body{
 /*FORMATANDO A SECTION FAQS*/
 .faqs{
   margin: auto;
-  width: 50%;
+  width: 60%;
   color: #fff;
 }
 .faqs li{
@@ -396,7 +396,11 @@ body{
 #fechar{
   display: none;
 }
-
+.faqs form p{
+  text-align: center;
+  font-size: 1.2em;
+  margin: 50px 0 20px 0;
+}
 .faqs li p{
   font-size: 1.5em;
 }
@@ -410,7 +414,12 @@ body{
   padding: 30px; 
   background-color: #303030;
   text-align: left;
-  position: absolute;
+  /*position: absolute;*/
+}
+.faqs form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
