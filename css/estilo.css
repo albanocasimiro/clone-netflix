@@ -412,8 +412,21 @@ body{
   text-align: left;
   position: absolute;
 }
-
-
+.faqs form{
+  width: 100%;
+}
+/*media queries*/
+@media screen and (max-width:600px){
+  .faqs{
+    width: 100%;
+  }
+  .faqs h2{
+  font-size: 1.8em;
+}
+.faqs li{
+  width: 100%;
+}
+}
 
 /*FORMATANDO A PARTE DO FOOTER*/
 footer{
@@ -433,4 +446,12 @@ footer a {
 }
 footer p i{
   color: red;
+}
+@media screen and (max-width:600px){
+  footer{
+    width: 100%;
+  }
+  footer p a{
+    font-size: 1em;
+  }
 }
