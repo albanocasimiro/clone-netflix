@@ -1,6 +1,6 @@
 # netflix
 
-![preview](./img/preview.PNG)
+![preview](./preview.PNG)
 > Clone Netflix
 
 Projecto construído para praticar HTML/CSS/JS
