@@ -72,12 +72,12 @@ body{
   display: flex;
   margin-top: 30px;
 }
-.centralizar input, .faqs input{
+.centralizar input{
   padding: 5px;
   width: 500px;
   height: 60px;
 }
-.centralizar button, .faqs button{
+.centralizar button{
   height: 60px;
   color: white;
   width: 180px;
@@ -376,6 +376,9 @@ body{
   background-color: #303030;
   list-style: none;
 }
+.faqs p{
+  text-align: center;
+}
 .faqs h2{
   margin-bottom: 20px;
   padding-left: 100px;
@@ -421,9 +424,21 @@ body{
   align-items: center;
   justify-content: center;
 }
-.faqs form{
-  width: 100%;
+.faqs form input{
+  padding: 5px;
+  width: 500px;
+  height: 60px;
 }
+.faqs form button{
+  height: 60px;
+  color: white;
+  width: 180px;
+  background-color: rgb(207, 6, 6);
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
 /*media queries*/
 @media screen and (max-width:600px){
   .faqs{
@@ -432,7 +447,10 @@ body{
   .faqs h2{
   font-size: 1.8em;
 }
-.faqs li{
+.faqs form input{
+  width: 100%;
+}
+.faqs button{
   width: 100%;
 }
 }
